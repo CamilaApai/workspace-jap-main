@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>eMercado - Todo lo que busques está aquí</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;1,100&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary p-1">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img id="logoImage" src="logo-day.png" alt="Logo" width="170" height="70" class="d-inline-block align-text-top">
+      </a>
+    </div>
+    <div class="container">
+      <!-- <a class="navbar-brand" href="index.html">eMercado - Todo lo que busques está aquí</a> -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav w-100 justify-content-between">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="categories.html">Categorías</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sell.html">Vender</a>
+          </li>
+          <li class="nav-item" id="inicioSesion">
+            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Nombre de Usuario
+            </a>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                <!-- Opciones del menú desplegable -->
+                <a class="dropdown-item" href="cart.html">Mi carrito</a>
+                <a class="dropdown-item" href="my-profile.html">Mi perfil</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="login.html" id="cerrarSesion">Cerrar sesión</a>
+                <button class="dropdown-item" id="modo-toggle" aria-label="Contraste" role="switch" onclick="toggleLook()">Modo <span id="modo-icon">&#9728;</span></button>
+            </div>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<main role="main" class="pb-5">
+    <div class="text-center p-4">
+        <h2>Productos</h2>
+        <p>Verás aquí todos los productos de la categoría Autos</p>
+
+        <!-- Filtros por rango de precio -->
+        <label for="minPrice">Precio mínimo:</label>
+        <input type="number" id="minPrice" min="0" >
+        <label for="maxPrice">Precio máximo:</label>
+        <input type="number" id="maxPrice" min="0">
+        <button id="applyFilterBtn" class="botonproductos">Aplicar Filtro</button>
+
+        <!-- Botones de orden -->
+        <button id="ascPriceBtn" class="botonproductos">Ascendente</button>
+        <button id="descPriceBtn" class="botonproductos">Descendente</button>
+        <button id="descRelevanceBtn"  class="botonproductos" >Relevancia descendente</button>
+
+        <!-- Campo de búsqueda en tiempo real -->
+        <input type="search" id="searchInput" placeholder="Buscar productos...">
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="list-group" id="cat-list-container">
+                <!-- Aquí se llenarán dinámicamente los productos -->
+            </div>
+        </div>
+    </div>
+</main>
+
+<div id="spinner-wrapper">
+    <div class="lds-ring">
+        <div></div>
+    </div>
+</div>
+
+<script src="js/vendor/jquery-3.4.1.min.js"></script>
+<script src="js/vendor/bootstrap.bundle.min.js"></script>
+<script src="js/init.js"></script>
+<script src="js/products.js"></script>
+
+</body>
+</html>

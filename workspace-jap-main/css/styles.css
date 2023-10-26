@@ -1,0 +1,368 @@
+.jumbotron,
+.card-body,
+.container,
+.site-header {
+  font-family: 'Verdana', serif !important;
+}
+
+.jumbotron .display-4 {
+  font-weight: bold;
+}
+#exampleFormControlTextarea1  {
+max-width: 350px;
+}
+#puntuacionID {
+  max-width: 350px;
+
+}
+nav a {
+  text-decoration: none;
+}
+.card-footer {
+  background-color: transparent
+}
+.card-header {
+  background-color: transparent
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.card-header {
+  font-weight: bold;
+}
+#comentariosP {
+  font-size: 150%;
+}
+.amarillo {
+  border: 1px solid #000000;
+  border-radius: 0.5rem;
+}
+.fa  {
+  color: #fdb72b
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+#alertaContainer {
+  color: red;
+  font-size: 85%;
+}
+
+.jumbotron {
+  height: 50vh;
+  padding: 5em inherit;
+  margin-bottom: 0;
+  background-color: #53C0FB;
+  background: url('../img/cover_back.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  text-shadow: 1px 1px 2px grey;
+}
+
+.jumbotron .lead {
+  font-size: 38px;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.site-header a {
+  color: white;
+  transition: ease-in-out color .15s;
+}
+
+.site-header .dropdown-menu a {
+  color: black;
+}
+
+.dropzone {
+  border: 2px dashed #0087F7;
+  border-radius: 5px;
+  background: white;
+}
+
+.img-fit {
+  max-height: 100%;
+}
+
+.alert {
+  position: fixed;
+  top: 80px;
+  width: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  top: 50%;
+  left: 50%;
+}
+
+.cursor-active {
+  cursor: pointer;
+}
+.tituloRel {
+text-align: center;
+
+}
+#divtituloProductosrelacionados {
+  margin-top: 20px; 
+  margin-right: 20px;
+  font-size: 150%;
+}
+
+.left {
+  float: left;
+  padding: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  margin: 6px;
+  border: 6px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+#spinner-wrapper {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1021;
+  display: none;
+}
+
+main {
+  min-height: calc(100vh - 210px);
+}
+
+a.custom-card,
+a.custom-card:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.checked {
+  color: orange;
+}
+
+.botonproductos {
+  padding: 10px 20px;
+  background-color: #f89340;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+input[type="number"],
+input[type="search"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="number"]:focus,
+input[type="search"]:focus {
+    outline: none;
+    border-color: #000000;
+}
+
+label[for="minPrice"],
+label[for="maxPrice"] {
+    
+    color: #000000;
+    margin-right: 5px;
+}
+
+.list-group-item {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.list-group-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#searchInput {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 14px;
+  background-color: #f5f5f5;
+}
+
+#searchInput::placeholder {
+  color: #aaa;
+}
+
+button:hover {
+  background-color: #ca8c5a;
+}
+
+/*carrousel imágenes*/
+.carousel-item img {
+  max-width: 400px;
+  max-height: 400px;
+  margin: 0 auto;
+}
+
+/* Estilos para el modo Noche */
+body.noche,
+html.noche {
+  color: white !important; 
+  background: #100e1d !important; 
+  background-color: rgb(31, 29, 29) !important;
+}
+
+.noche .navbar {
+  background-color: #302f33 !important; 
+}
+
+.noche .card,
+.noche .jumbotron {
+  background-color: #0c091d !important; 
+  color: white !important; 
+}
+
+#comprarButton {
+  background-color: rgb(72, 209, 72);
+  border-radius: 10px;
+  color: white;
+  border-color: green;
+  padding: 6px;
+  font-size: 80%;
+  float: right; /* Alinea el botón a la derecha */
+}
+
+/* Cambiar el color de las letras a naranja */
+.navbar a {
+  color: #FFA500 !important;
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: bold; 
+}
+
+/* Cambiar el color de las letras del nombre de usuario */
+#inicioSesion a {
+  color: #FFA500 !important;
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: bold; 
+}
+/* Cambiar el color de las letras a violeta en modo noche */
+body.noche .navbar a {
+  color: #f5f5f5 !important;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold; 
+}
+
+
+body.noche #inicioSesion a {
+  color: #5a5959 !important;
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: bold; 
+}
+
+
+.bg-body-tertiary {
+  background-color: white !important;
+}
+
+/* Cambiar el color de las líneas del ícono del navbar-toggler a gris */
+.navbar-toggler-icon::before {
+  background-color: gray !important;
+}
+
+
+
+
+
+
+
